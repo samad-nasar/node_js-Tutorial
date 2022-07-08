@@ -9,11 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://https://github.com/samad-nasar/node_js-Tutorial.git"
+    "url": "https://github.com/samad-nasar/node_js-Tutorial.git"
   },
   "keywords": [
-    "node",
-    "js\u001b[D\u001b[_\u001b[C\u001b[C"
+    "node"
   ],
   "author": "Samad",
   "license": "ISC"
