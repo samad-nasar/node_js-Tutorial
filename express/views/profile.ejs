@@ -1,0 +1,11 @@
+
+    <%- include('commons/header') %>
+    <h2>Sign Up here <%=user.name%></h2>
+    <span>your languages:</span>
+    <ul>
+        <% user.skills.forEach((item)=>{ %>
+        <li><%= item %></li>  
+        <% }) %>
+    </ul>
+</body>
+</html>
