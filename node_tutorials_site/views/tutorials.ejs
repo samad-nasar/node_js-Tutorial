@@ -1,0 +1,22 @@
+
+    <%- include('./commons/header.ejs') %>
+    <div class="container">
+        <div class="container-inner">
+            <div class="note-block">
+                <h3 class="note-heading">Retrieving deleted node_modules</h3>
+                <p>If node_modules is deleted accidently, we can retrieve them back by running node command:</p>
+                <pre><code><span>npm install</span></code></pre>
+                <div class="special-note"><div>while pushing a local git repo to remote git repo, node_modules is not added. So on other side, if some one wants to
+                work on the project, he/she will have to just run npm install. this will install all modules by tracking them from
+                package-lock.json</div></div>
+            </div>
+            <div class="note-block">
+                <h3 class="note-heading">Windows: Running Script through Nodemon</h3>
+                <p>in windows, nodemon index.js will not run, but through error. To run scripts through nodemon, first change the windows execution policy to unrestricted or remote remoteSigned. Run:</p>
+                <pre><code><span>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser</span></code></pre>
+                <div class="special-note"><div>Note! run this command in windows powershell</div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+1. folder ' views ' that is part of template engine, contains dynamic pages like files with ectension .ejs
+2. public folder contains all static content (html,css, js)

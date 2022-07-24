@@ -3,6 +3,9 @@ const path =require('path');
 
 const app=express();
 const publicPath=path.join(__dirname,'public');
+const tutorialsPath=__dirname.substr(0,12);
+// console.log(publicPath.indexOf('express'));
+const path2=publicPath.substr(0,12);
 app.set('view engine', 'ejs');
 
 app.get('/',(req,res)=>{
@@ -16,11 +19,12 @@ app.get('/profile', (req, res) => {
         name:'samad',email:'samad@gmail.com',
         skills:['php', 'javascript', 'java', 'swift', 'react']
     }
-    res.render('profile', {user});
+    res.render('profile', {user});//profile inside render is the file name without .ejs extension.
 })
 app.get('*', (req, res) => {
     res.sendFile(`${publicPath}/404.html`);
 })
+
 /*
 app.get('/about', (req, res) => {
     res.send(`
@@ -29,4 +33,4 @@ app.get('/about', (req, res) => {
     <a href='/'>Go to Home Page</a>`);
 })
 */
-app.listen(400, ()=>console.log('port 400 running...'))
+app.listen(400, ()=>console.log('port 401 running...'))
